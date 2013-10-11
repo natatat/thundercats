@@ -1,27 +1,33 @@
-<h1>JokeZ</h1>
+<!DOCTYPE html>
+<head>
+  <title>jokez f'days</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-<ul>
+<body>
+<div class="header">
+  <a href="/">
+    <h1>jokez</h1>
+  </a>
   <% @posts.each do |post| %>
-    <li><a href="/detail/<%= post.id %>"><%= post.title %></a>
-      <br/>
-      <em><%= post.content[0..25] %></em>
-    </li>
+    <p><a href="/detail/<%= post.id %>"><%= post.title %></a></p>
+    <!-- <br/><em><%= post.content[0..25] %></em><p> -->
   <% end %>
-</ul>
+</div>
 
-<p>Enter a JOKE!</p>
+<br/>
+<div class="body">
+  <p id="error"><%= @post_errors %></p>
+  <span class="joke_prompt">enter a joke</span>
+  <br/><br/>
+  <form action="/form" method="post">
+  	<input type="text" size="40" name="title" placeholder="SO YOU GOT JOKES?!" value="<%= @post.title %>">
+    <br/>
+  	<input type="text" size="40" name="content" placeholder="PUNCHLINE" value="<%= @post.content %>">
+    <br/>
+    <input type="submit" value="submit">
+  </form>
+</div>
 
-<form action="/form" method="post">  
-	<label>Title
-		<br/>
-	  <input type="text" name="title">  
-  </label>
-  <br/>
-  <label>Content
-  	<br/>
-  	<textarea rows="5" cols="50" name="content"></textarea>
-  </label>
-	  <input type="submit" value="Submit">
-</form>  
-
-<!-- <p>hi cricket... aka code name konami</p> -->
+</body>
+</html>

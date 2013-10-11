@@ -1,0 +1,90 @@
+body {
+  /*text-align: center;*/
+  background: white;
+  color: black;
+  font-family: helvetica-light;
+}
+
+div.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:50px;
+  padding-right:50px;
+  text-align: left;
+  overflow: scroll;
+  background-color: #FFFFFF;
+}
+
+div.body {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-top:30px;
+  padding-right:30px;
+  padding-bottom:30px;
+  text-align: right;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: Monaco;
+  font-size: 40px;
+  color: black;
+}
+
+a:link {
+  font-size: 20px;
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  font-size: 20px;
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+span.joke_prompt {
+  position:relative;
+  padding-right: 1px;
+  font-family: Monaco;
+  font-size: 20px;
+}
+
+p#error {
+  position:relative;
+  padding-right: 6px;
+  font-size:12px;
+}
+
+input, textarea {
+  padding: 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+input[type="submit"] {
+  font-family: helvetica-light;
+  font-size: 14px;
+  padding: 5px;
+  background: white;
+  color: red;
+  border: 0px solid;
+  border-radius: 0px;
+}
+
+input[type="submit"]:hover {
+  color: black;
+}
