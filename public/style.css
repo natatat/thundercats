@@ -1,5 +1,4 @@
 body {
-  /*text-align: center;*/
   background: white;
   color: black;
   font-family: helvetica-light;
@@ -87,4 +86,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: black;
+}
+
+/*@media (max-width: 768px) {
+  input[type="submit"], input[type="text"] {
+    width:100%;
+    color: blue;
+  }*/
+
 }
